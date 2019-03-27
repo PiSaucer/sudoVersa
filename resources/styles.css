@@ -35,6 +35,54 @@
   text-length: 25;
 }
 
+#step_print{
+  font-size: 34;
+  x: 3%;
+  y: 47%+0;
+  fill: white;
+  text-length: 25;
+}
+
+#txtSteps {
+  font-size: 35;
+  x: 36%;
+  y: 47%+0;
+  fill: #e56a50;
+  text-length: 25;
+}
+
+#batt_print{
+  font-size: 34;
+  x: 3%;
+  y: 60%+0;
+  fill: white;
+  text-length: 25;
+}
+
+#batteryLabel {
+  font-size: 35;
+  x: 36%;
+  y: 60%+0;
+  fill: #5c8c52;
+  text-length: 25;
+}
+
+#hr_print{
+  font-size: 35;
+  x: 3%;
+  y: 73%+0;
+  fill: white;
+  text-length: 25;
+}
+
+#heartrateLabel {
+  font-size: 35;
+  x: 36%;
+  y: 73%+0;
+  fill: #2768bc;
+  text-length: 25;
+}
+
 #username {
   fill: white;
   font-size: 33;

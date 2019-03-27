@@ -4,7 +4,7 @@ import document from "document";
 import { preferences } from "user-settings";
 import * as util from "../common/utils";
 import { today } from "user-activity";
-import { charger, battery } from "power";
+import { battery } from "power";
 import { goals } from "user-activity";
 import { today } from "user-activity";
 import * as battery from "battery";
@@ -13,10 +13,10 @@ import * as messaging from "messaging";
 
 import * as util from "../common/utils";
 
-console.log("PiSaucer's SudoFitbit Version 0.1")
+console.log("PiSaucer's SudoFitbit Version 0.15")
 
 // Update the clock every minute
-clock.granularity = "minutes";
+clock.granularity = "seconds"; //clock is refreshing every sec. It is possible to select minutes as well
 
 // Get a handle on the <text> element
 const myLabel = document.getElementById("myLabel");
@@ -44,3 +44,31 @@ clock.ontick = (evt) => {
 
 // steps
 let txtSteps = document.getElementById("txtSteps");
+
+// still steps 
+//inside the clock tick handler
+txtSteps.text = today.adjusted.steps || 0;
+
+
+//batt
+const batteryHandle = document.getElementById("batteryLabel");
+
+  // Battery Measurement
+  let batteryValue = battery.chargeLevel; // measure the battery level and send it to the variable batteryValue
+  
+  // Assignment value battery
+  batteryHandle.text = `${batteryValue}%`;
+
+
+//hr
+const heartrateHandle = document.getElementById("heartrateLabel");
+
+// The following block read the heart rate from your watch
+const hrm = new HeartRateSensor();
+
+hrm.onreading = function() {
+  heartrateHandle.text = `${hrm.heartRate} BPM`;
+}
+hrm.start();
+
+

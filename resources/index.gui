@@ -2,7 +2,18 @@
   <text id="username">user@fitbit: ~ $ now</text>
   <text id="time_print">[TIME]</text>
   <text id="myLabel"></text>
-  <text id="txtSteps"></text>
+  
   <text id="date_print">[DATE]</text>
   <text id="date"> </text>
+  
+  <text id="step_print">[STEP]</text>
+  <text id="txtSteps"></text>
+  
+  <text id="batt_print">[BATT]</text>
+  <text id="batteryLabel" />
+  <!--
+  <text id="cal_print">[CAL/]</text>
+  !-->
+  <text id="hr_print">[/HR/]</text>
+  <text id="heartrateLabel" />
 </svg>
