@@ -1,0 +1,30 @@
+{
+  "fitbit": {
+    "appUUID": "647321c3-4fd8-4361-b296-cbaa0bb7bdd0",
+    "appType": "clockface",
+    "appDisplayName": "sudofitbit",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [
+      "access_activity",
+      "access_user_profile",
+      "access_heart_rate",
+      "access_location",
+      "access_internet",
+      "run_background"
+    ],
+    "buildTargets": [
+      "meson",
+      "gemini"
+    ],
+    "i18n": {
+      "en": {
+        "name": "sudofitbit"
+      }
+    },
+    "defaultLanguage": "en-US"
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~3.1.0"
+  }
+}

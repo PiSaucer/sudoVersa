@@ -1,0 +1,44 @@
+.background {
+  viewport-fill: black;
+}
+
+#time_print{
+  font-size: 35;
+  x: 3%;
+  y: 23%+0;
+  fill: white;
+  text-length: 25;
+}
+
+#myLabel {
+  font-size: 35;
+  x: 35%;
+  y: 23%+0;
+  fill: #5c8c52;
+  text-length: 25;
+}
+
+
+#date_print{
+  font-size: 34;
+  x: 3%;
+  y: 35%+0;
+  fill: white;
+  text-length: 25;
+}
+
+#date {
+  font-size: 35;
+  x: 35%;
+  y: 35%+0;
+  fill: #2768bc;
+  text-length: 25;
+}
+
+#username {
+  fill: white;
+  font-size: 33;
+  x: 3%;
+  y: 10%+0;
+  text-length: 25;
+}

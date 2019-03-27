@@ -1,0 +1,8 @@
+<svg class="background">
+  <text id="username">user@fitbit: ~ $ now</text>
+  <text id="time_print">[TIME]</text>
+  <text id="myLabel"></text>
+  <text id="txtSteps"></text>
+  <text id="date_print">[DATE]</text>
+  <text id="date"> </text>
+</svg>
