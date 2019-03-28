@@ -29,7 +29,7 @@
 
 #date {
   font-size: 35;
-  x: 35%;
+  x: 36%;
   y: 35%+0;
   fill: #2768bc;
   text-length: 25;
@@ -80,6 +80,38 @@
   x: 36%;
   y: 73%+0;
   fill: #2768bc;
+  text-length: 25;
+}
+
+#cal_print{
+  font-size: 35;
+  x: 3%;
+  y: 85%+0;
+  fill: white;
+  text-length: 25;
+}
+
+#myCalories{
+  font-size: 35;
+  x: 36%;
+  y: 85%+0;
+  fill: #e56a50;
+  text-length: 25;
+}
+
+#dist_print{
+  font-size: 35;
+  x: 3%;
+  y: 97%+0;
+  fill: white;
+  text-length: 25;
+}
+
+#myDistance{
+  font-size: 35;
+  x: 36%;
+  y: 97%+0;
+  fill: #5c8c52;
   text-length: 25;
 }
 

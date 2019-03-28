@@ -13,7 +13,7 @@ import * as messaging from "messaging";
 
 import * as util from "../common/utils";
 
-console.log("PiSaucer's SudoFitbit Version 0.15")
+console.log("PiSaucer's SudoFitbit Version 2.0")
 
 // Update the clock every minute
 clock.granularity = "seconds"; //clock is refreshing every sec. It is possible to select minutes as well
@@ -28,7 +28,7 @@ clock.ontick = (evt) => {
   let dtDate = new Date();
   let hours = today.getHours();
   
-   elDate.text = `${util.getDay3(dtDate.getDay())} ${dtDate.getDate()} ${util.getMonth3(dtDate.getMonth())}`;
+   elDate.text = `${util.getMonth3(dtDate.getMonth())} ${dtDate.getDate()}, ${util.getDay3(dtDate.getDay())}`;
   
   if (preferences.clockDisplay === "12h") {
     // 12h format
@@ -72,3 +72,22 @@ hrm.onreading = function() {
 hrm.start();
 
 
+//cal
+const myCalories = document.getElementById("myCalories");
+
+function getCalories() {
+  let val = (today.adjusted.calories || 0);
+  myCalories.text = `${val}`
+}
+
+getCalories();
+
+//dist
+const myDistance = document.getElementById("myDistance");
+
+function getDistance() {
+  let val = (today.adjusted.distance || 0);
+  myDistance.text = `${val}`
+}
+
+getDistance();

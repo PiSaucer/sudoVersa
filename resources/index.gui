@@ -11,9 +11,13 @@
   
   <text id="batt_print">[BATT]</text>
   <text id="batteryLabel" />
-  <!--
-  <text id="cal_print">[CAL/]</text>
-  !-->
-  <text id="hr_print">[/HR/]</text>
+  
+  <text id="hr_print">[  HR  ]</text>
   <text id="heartrateLabel" />
+  
+  <text id="cal_print">[ CAL ]</text>
+  <text id="myCalories"></text>
+  
+  <text id="dist_print">[DIST ]</text>
+  <text id="myDistance"></text>
 </svg>
