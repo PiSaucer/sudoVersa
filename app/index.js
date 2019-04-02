@@ -13,7 +13,7 @@ import * as messaging from "messaging";
 
 import * as util from "../common/utils";
 
-console.log("PiSaucer's SudoFitbit Version 2.0")
+console.log("PiSaucer's SudoFitbit Version 2.1")
 
 // Update the clock every minute
 clock.granularity = "seconds"; //clock is refreshing every sec. It is possible to select minutes as well

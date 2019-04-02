@@ -1,5 +1,5 @@
 <svg class="background">
-  <text id="username">user@fitbit: ~ $ now</text>
+  <text id="username">user@versa: ~ $ now</text>
   <text id="time_print">[TIME]</text>
   <text id="myLabel"></text>
   
